@@ -1,0 +1,30 @@
+we can find our tennant id at azure active directory 
+tennant id-->subscriptions-->resource groups-->storage accounts
+-------------
+RBAC is divided into 3 types
+1) owner
+2) contributor
+3) Reader
+-------------
+Data Storage is of two types structured and unstructured 
+
+storage account is a service which is used to store the unstructured data in azure 
+in storage account data redundancy is further classified into 4 types 
+1) LRS
+2) ZRS
+3) GRS
+4) GZRS
+
+LRS (local redudant storage):
+    in one DC our data will be stored in multiple servers i.e., if one of the server is not available then we can fetch the data from the rest of the servers
+
+ZRS (Zone redudant storage):
+    In this we have 3 differenct DC's in the same region among those DC's we can have one copy of data is stored in each and every DC
+    
+    Eg: where A is my data , and that A is stored in DC1, DC2 and DC3 these 3 DC's are located at different data centers so that if i loose one DC then i can fetch the data from another DC
+
+GRS (Geo redundant storage):
+    In this we have two regions which are different from each other.In each region we will be having a LRS on 2 regions so that if one entire DC is goes down then we can have the data in different region with 3 copies 
+
+GZRS (Geo Zone Redudant Storage):
+    In this we are having ZRS in the primary DC in the same region and having LRS in different region
