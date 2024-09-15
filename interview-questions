@@ -1,0 +1,10 @@
+*)What is the difference b//s shared access signature (SAS) and access key
+
+    In SAS we can provide the level of control the permissions where as in access keys we don't have
+the control the permissions these access key can be used by archtiect level of persons
+
+*)if we delete the storage account it can't be recovered we can recover only blob and containers if they 
+get deleted
+
+*)share access token was generated at blod level , SAS will be generated at storage account level
+both will do same actions

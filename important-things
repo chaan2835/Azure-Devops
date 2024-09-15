@@ -1,5 +1,5 @@
 we can find our tennant id at azure active directory 
-tennant id-->subscriptions-->resource groups-->storage accounts
+tennant id-->subscriptions-->resource groups-->storage accounts-->containers
 -------------
 RBAC is divided into 3 types
 1) owner
@@ -28,3 +28,25 @@ GRS (Geo redundant storage):
 
 GZRS (Geo Zone Redudant Storage):
     In this we are having ZRS in the primary DC in the same region and having LRS in different region
+
+------------
+Access tiers
+
+1) Hot : In hot tier cost for a transaction is less but for storing data cost is high 
+2) cool : In cool tier cost for transaction is high but for storing data cost is less
+
+in storage accounts we can store the data in various formats
+1) containers
+2) fileshares
+3) Queues
+4) Tables
+
+there are 3 types of blobs are there
+1) blocked blob : used to store unstructured data
+2) Append blob: used to store logs data
+3) page blob: used to store .vhd files data (means vitrual machines related data)
+
+In blod storage we can store a maximum of 500TB 
+---------
+Life cycle management 
+    This will be used to set the rules at the storage account level to maintain the blobs in containers to change the access level (archive,cool,hot and so on)
